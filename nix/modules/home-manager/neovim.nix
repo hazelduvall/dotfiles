@@ -7,16 +7,14 @@
 let
   cfg = config.programs.neovim;
 
-  neovimConfig = pkgs.neovimUtils.makeNeovimConfig {
+  wrappedNeovim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped {
     viAlias = true;
     vimAlias = true;
-    withNodeJs = true;
-    withPython3 = true;
-    withRuby = true;
+    withNodeJs = false;
+    withPython3 = false;
+    withRuby = false;
     wrapRc = false;
   };
-
-  wrappedNeovim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped neovimConfig;
 in
 {
   options.programs.neovim = {
@@ -54,7 +52,7 @@ in
           # TODO: add more configuration options for language servers
           clang-tools
           nixd
-          nixfmt-rfc-style
+          nixfmt
           vscode-js-debug
           vscode-langservers-extracted
         ]);
