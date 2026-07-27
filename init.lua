@@ -1,3 +1,6 @@
+-- Leader keys; need to be defined before anything else
+vim.g.mapleader = " "
+
 -- Setup lazy.vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -60,6 +63,23 @@ require("lazy").setup({
         "nvim-dap-ui",
         "oil",
         "trouble",
+      },
+      sections = {
+        lualine_b = { "branch", "diff", "diagnostics", "lsp_status" },
+        lualine_c = {
+          {
+            "filename",
+            path = 1, -- Relative path
+          },
+        },
+      },
+      inactive_sections = {
+        lualine_c = {
+          {
+            "filename",
+            path = 1, -- Relative path
+          },
+        },
       },
     },
   },
@@ -636,7 +656,12 @@ require("lazy").setup({
     branch = "master",
     ---@module 'oil'
     ---@type oil.SetupOpts
-    opts = {},
+    opts = {
+      columns = {
+        "git_status",
+        "icon",
+      },
+    },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     lazy = false,
     keys = {
