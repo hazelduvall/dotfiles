@@ -50,9 +50,11 @@ in
           # For treesitter
           tree-sitter
           # TODO: add more configuration options for language servers
+          bash-language-server
           clang-tools
           nixd
           nixfmt
+          prettier
           vscode-js-debug
           vscode-langservers-extracted
         ]);

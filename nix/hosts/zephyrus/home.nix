@@ -28,12 +28,5 @@
     magic-wormhole
     mpv
     nix-output-monitor
-    (wgsl-analyzer.overrideAttrs (
-      final: prev: {
-        postInstall = (prev.postInstall or "") + ''
-          rm $out/bin/xtask
-        '';
-      }
-    ))
   ];
 }

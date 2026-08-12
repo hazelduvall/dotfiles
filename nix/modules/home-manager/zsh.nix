@@ -35,13 +35,7 @@ in
           eza
           fd
           ripgrep
-          (sd.overrideAttrs (
-            final: prev: {
-              postInstall = (prev.postInstall or "") + ''
-                rm $out/bin/xtask
-              '';
-            }
-          ))
+          sd
         ];
       }
       (lib.mkIf cfg.powerlevel10k.enable {
