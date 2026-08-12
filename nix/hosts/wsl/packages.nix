@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     age
+    btop
     clang
     cmake
     htop

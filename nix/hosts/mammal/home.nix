@@ -25,6 +25,7 @@
   programs.zsh.kittyExtra.enable = false;
 
   home.packages = with pkgs; [
+    btop
     htop
   ];
 }
