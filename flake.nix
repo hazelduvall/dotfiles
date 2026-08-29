@@ -42,6 +42,7 @@
         ./nix/hosts/macbook-m4-pro
         ./nix/hosts/mammal
         ./nix/hosts/macbook-pro-2019
+        ./nix/hosts/unicorn
         ./nix/hosts/wsl
         ./nix/hosts/zephyrus
       ];

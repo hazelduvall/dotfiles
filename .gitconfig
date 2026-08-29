@@ -16,7 +16,6 @@
 [branch]
 	sort = committerdate
 [core]
-	editor = nvim
 	autocrlf = false
 	eol = lf
 	safecrlf = true
