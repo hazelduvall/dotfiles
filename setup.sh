@@ -43,7 +43,7 @@ make_link file .zshrc.p10k
 # make_link file .zshrc.extra-archlinux .zshrc.extra
 # make_link directory powerlevel10k
 # make_link directory .themes/Windurs10
-# make_link file .tmux.conf
+make_link file .tmux.conf
 make_link file .vimrc
 make_link file init.lua "$HOME/.config/nvim/init.lua"
 # make_link file coc-settings.json "$HOME/.config/nvim/coc-settings.json"

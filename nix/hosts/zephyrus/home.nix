@@ -26,7 +26,6 @@
     btop
     htop
     magic-wormhole
-    mpv
-    nix-output-monitor
+    tmux
   ];
 }
