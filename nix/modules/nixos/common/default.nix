@@ -2,9 +2,10 @@
 { pkgs, lib, ... }:
 {
   environment.systemPackages = with pkgs; [
+    fd
     jq
     magic-wormhole
-    nix-output-monitor
+    ripgrep
   ];
 
   # Necessary for using flakes on this system.

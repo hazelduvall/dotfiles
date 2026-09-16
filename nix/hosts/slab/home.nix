@@ -10,8 +10,5 @@
 
   xdg.enable = true;
 
-  programs.claude.sandbox.enable = false;
-  programs.claude.sandbox.nonManaged = false;
   programs.jujutsu.nonManagedEnable = true;
-  programs.neovim.lsp.cspell = true;
 }
