@@ -2,7 +2,7 @@
 {
   imports = [
     ../../modules/home-manager
-    ../../modules/home-manager/work
+    ../../modules/home-manager/darwin
   ];
 
   home.stateVersion = "24.05";
@@ -10,8 +10,8 @@
 
   xdg.enable = true;
 
-  programs.claude.sandbox.enable = true;
-  programs.claude.sandbox.nonManaged = true;
+  programs.claude.sandbox.enable = false;
+  programs.claude.sandbox.nonManaged = false;
   programs.jujutsu.nonManagedEnable = true;
   programs.neovim.lsp.cspell = true;
 }

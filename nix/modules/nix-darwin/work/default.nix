@@ -15,7 +15,7 @@
   ];
 
   homebrew = {
-    enable = true;
+    enable = false;
     brews = [
       # Programs that I want to stay up-to-date
       "gh"

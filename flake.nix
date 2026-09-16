@@ -39,9 +39,9 @@
       importSubmodule = path: import path inputs';
       submodules = [
         ./nix/hosts/hyper-v1
-        ./nix/hosts/macbook-m4-pro
-        ./nix/hosts/mammal
         ./nix/hosts/macbook-pro-2019
+        ./nix/hosts/mammal
+        ./nix/hosts/slab
         ./nix/hosts/unicorn
         ./nix/hosts/wsl
         ./nix/hosts/zephyrus

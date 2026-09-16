@@ -29,6 +29,7 @@ in
             '')
             (builtins.readFile ../../../.zshrc.extra)
           ];
+          dotDir = config.home.homeDirectory;
         };
 
         home.packages = with pkgs; [
